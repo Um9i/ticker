@@ -48,6 +48,7 @@ when isMainModule:
     else:
       discard
   else:
+    tick("https://game.planetarion.com/botfiles/")
     # check every 10 seconds if we should tick
     while true:
       let minute = getTime().format("mm")
