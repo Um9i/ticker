@@ -31,9 +31,9 @@ proc getTick(content: string): int =
 proc saveBotfile(botfile: Botfile): Botfile {.discardable.} =
   # Saves a botfile locally in a hierarchical structure based on the tick.
   var dir = joinPath("botfiles", intToStr(botfile.tick))
-  if not existsDir(dir):
+  if not dirExists(dir):
     createDir(dir)
-  if not existsFile(joinPath(dir, botfile.name)):
+  if not fileExists(joinPath(dir, botfile.name)):
     writeFile(joinPath(dir, botfile.name), botfile.content)
     echo fmt"Botfile {botfile.url} saved"
   else:
