@@ -4,7 +4,7 @@ unofficial OS agnostic botfile downloader for the game [planetarion](http://www.
 
 ## Usage
 
-Download the latest release from the [releases](https://github.com/Um9i/ticker/releases) page and run. 
+Download the latest release from the [releases](https://github.com/Um9i/ticker/releases) page and run, windows users will also need the dlls. 
 
 It will get the current ticks botfiles and continue to run in the background where upon every hour it runs again to get the latest tick.
 
